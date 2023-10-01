@@ -4,9 +4,8 @@ import { PokedexPageComponent } from './pages/pokedex-page/pokedex-page.componen
 import { CreatePokemonPageComponent } from './pages/create-pokemon-page/create-pokemon-page.component';
 
 const routes: Routes = [
-  {path: "/", component: PokedexPageComponent},
-  {path: "/create", component: CreatePokemonPageComponent}
-
+  {path: "", component: PokedexPageComponent},
+  {path: "create", component: CreatePokemonPageComponent}
 ];
 
 @NgModule({

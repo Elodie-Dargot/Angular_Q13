@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
+import { Pokemon } from './pokemon.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PokedexService {
+export class PokedexService{
 
-  constructor() { }
+  pokemons: Pokemon[] = []
+
+  addPokemon(pokemon: Pokemon){
+    this.pokemons.push(pokemon)
+  }
 }
