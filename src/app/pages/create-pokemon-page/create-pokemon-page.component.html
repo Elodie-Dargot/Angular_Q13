@@ -5,7 +5,7 @@
         Photo link: <input type="text" id="image" formControlName="image"><br />
         Description: <input type="text" id="description" formControlName="description"><br />
     </fieldset>
-    <button type="submit" [ngClass]="{'valid' : myForm.valid}">Create New Kitten</button>
+    <button type="submit" [ngClass]="{'valid' : myForm.valid}" [disabled]="myForm.invalid">Create New Pokemon</button>
     <div class="validMessage" *ngIf="myForm.invalid && showErrorMessage">L'ensemble des champs sont requis</div>
     <div class="validMessage" *ngIf="myForm.valid && click">The card has been created, you will redirect in 2 seconds</div>
 </form>

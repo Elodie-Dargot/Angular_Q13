@@ -1,2 +1,13 @@
-<app-pokemon-list></app-pokemon-list>
-<app-pokemon-detail></app-pokemon-detail>
+<div class="container">
+  <div class="list">
+    <app-pokemon-list [pokemons]="pokemons" (pokemonClicked)="onPokemonClick($event)"></app-pokemon-list>
+  </div>
+  <div class="details">
+    <app-pokemon-detail [selectedPokemon]="selectedPokemon" *ngIf="showDetails"></app-pokemon-detail>
+  </div>
+</div>
+
+
+
+
+
