@@ -18,9 +18,17 @@ export class PokedexPageComponent implements OnInit{
   ngOnInit(): void {
       this.pokemons = this.pokedexService.getPokemons()
   }
+
+ displayDetails():void{
+    this.showDetails = !this.showDetails
+  }
   
   onPokemonClick(pokemon: Pokemon): void{
-    this.selectedPokemon = pokemon
-    this.showDetails = !this.showDetails
+      if(!this.showDetails){
+        this.selectedPokemon = pokemon
+        this.displayDetails()
+      } else {
+        this.displayDetails()
+      }
     }
 }

@@ -1,9 +1,11 @@
 <form class="form-card" [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <fieldset class="pokemon-card">
         <legend>Create Pokemon Card</legend>
-        Nom: <input type="text" id="name" formControlName="name"><br />
-        Photo link: <input type="text" id="image" formControlName="image"><br />
-        Description: <input type="text" id="description" formControlName="description"><br />
+        <div class="inputs">
+            Nom: <input type="text" id="name" formControlName="name"><br />
+            Photo link: <input type="text" id="image" formControlName="image"><br />
+            Description: <input type="text" id="description" formControlName="description"><br />
+        </div>  
     </fieldset>
     <button type="submit" [ngClass]="{'valid' : myForm.valid}" [disabled]="myForm.invalid">Create New Pokemon</button>
     <div class="validMessage" *ngIf="myForm.invalid && showErrorMessage">L'ensemble des champs sont requis</div>

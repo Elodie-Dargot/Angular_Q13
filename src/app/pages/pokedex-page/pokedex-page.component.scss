@@ -1,7 +1,12 @@
 .container {
     display: flex;
     justify-content: center;
+    .clicked{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
 
 .list{
     display: flex;

@@ -1,3 +1,30 @@
 .valid {
-    background-color:yellow;
+    background-color:rgb(202, 193, 109);
 }
+
+.form-card, .pokemon-card {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    box-shadow: lightgray 4px 4px 20px;
+  }
+
+  .pokemon-card{
+    background-color: rgba(252, 233, 66, 0.503);
+  }
+
+  .inputs{
+    text-align: right;
+  }
+
+  input, textarea {
+    width: 50%;
+    margin: 5px;
+  }
+
+  
+  button {
+    display: block;
+    margin: 20px auto;
+  }

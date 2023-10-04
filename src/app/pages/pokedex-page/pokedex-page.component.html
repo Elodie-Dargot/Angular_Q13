@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" [ngClass]="{'clicked' : showDetails}">
   <div class="list">
     <app-pokemon-list [pokemons]="pokemons" (pokemonClicked)="onPokemonClick($event)"></app-pokemon-list>
   </div>
