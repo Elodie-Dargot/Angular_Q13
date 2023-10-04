@@ -1,7 +1,7 @@
-<div  *ngFor="let pokemon of pokemons" (click)="onPokemonClick(pokemon)">
+<div  >
     <ul>
-        <li>
-            <p>{{pokemon.name}}</p>
+        <li *ngFor="let pokemon of pokemons" (click)="onPokemonClick(pokemon)" class="card">
+            <h2>{{pokemon.name}}</h2>
             <img [src]="pokemon.image" [alt]="pokemon.name">
         </li>
     </ul>
